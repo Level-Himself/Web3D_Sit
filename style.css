@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS rule to overwrite the navbar-brand font hover color
 */
 .navbar_coca_cola .navbar-brand:hover {
-    color: green;
+    color: lightblue;
 }
 
 /* NAVIGATION MENU
@@ -408,7 +408,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
 
     .navbar-text > p {
-        color: rgb(12, 5, 3);
+        color: lightblue;
         font-size: 18px;
     }
 
