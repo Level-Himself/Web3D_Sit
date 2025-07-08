@@ -4,7 +4,7 @@ init();
 
 function init() {
 
-	const assetPath = './';
+	const assetPath = './assets/glb_models/';
 	
 	clock = new THREE.Clock();
 
@@ -29,6 +29,7 @@ function init() {
 	const light = new THREE.DirectionalLight(0xFFFFFF);
 	light.position.set(0, 10, 2);
 	scene.add(light);
+	
 
 	// Add OrbitControls
 	const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -53,7 +54,7 @@ function init() {
 
 	//GLTF loader
 	const loader = new THREE.GLTFLoader();
-	loader.load(assetPath + 'assets/CokeCan.glb', function(gltf){
+	loader.load(assetPath + 'glass.glb', function(gltf){
 	constmodel = gltf.scene;
 	scene.add(model);
 
