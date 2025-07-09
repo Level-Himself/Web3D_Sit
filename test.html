@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container img {
+      display: block;
+      width: 400px;
+      height: auto;
+    }
+
+    .text-inside {
+      position: absolute;
+      top: 85%; /* vertically center */
+      right: 4%; /* padding from the right edge */
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* optional: dark background for readability */
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="assets/images/sprite.jpg" alt="Example Image">
+    <div class="text-inside">
+      This text sits inside
