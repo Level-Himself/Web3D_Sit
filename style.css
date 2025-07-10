@@ -53,12 +53,13 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 #main_text h2 {
-    color: rgba(0,102,153,1);
+    color: crimson;
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 #main_text h3 {
+    color: darkcyan;
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -175,6 +176,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
 .navbar_coca_cola .navbar-nav > .active > a:focus {
     color:  #760003; /* Font color for active font */
     background-color: whitesmoke; /* Blue color for background */
+    
 }
 
 /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
