@@ -229,6 +229,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     height: 50px;
 }
 
+.custom-footer {
+    background-color: #760003;
+}
+
 .navbar-text > a {
     color: rgb(255, 255, 255);
     font-size: 8px;
@@ -283,6 +287,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     .footer {
         background-color: #257600;
         height: 60px;
+    }
+
+    .custom-footer {
+        background-color: gray;
     }
 
     .navbar-text > a {
