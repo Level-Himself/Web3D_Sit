@@ -242,12 +242,24 @@ margin-top: 1%;
 }
 
 .custom-image {
-    border-radius: 25%;
+    border-radius: 5%;
     margin-bottom: 10%;
-    width: 50%;
+    width: 60%;
     max-height: 100%;
     display: block;
-    margin: 1%;
+    margin: 10px auto 20px auto;
+    border: 5px solid gray;
+}
+
+.my-custom-h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    margin: auto;
+    width:50%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
 }
 
 .navbar-text > a {
