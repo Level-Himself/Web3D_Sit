@@ -23,13 +23,11 @@ function init() {
 
 	document.body.appendChild(renderer.domElement);
 
-	const ambient = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
-	scene.add(ambient);
 
-	const light = new THREE.DirectionalLight(0xFFFFFF);
-	light.position.set(0, 10, 2);
+	const light = new THREE.DirectionalLight(0xFFFFFF, 1);
+	light.position.set(500, 500, 500);
 	scene.add(light);
-	
+
 
 	// Add OrbitControls
 	const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -54,15 +52,15 @@ function init() {
 
 	//GLTF loader
 	const loader = new THREE.GLTFLoader();
-	loader.load(assetPath + 'glass.glb', function(gltf){
-	constmodel = gltf.scene;
+	loader.load(assetPath + 'can.glb', function(gltf) {
+	const model = gltf.scene;
 	scene.add(model);
 
 	mixer = new THREE.AnimationMixer(model);
 	const animations = gltf.animations;
 	
-	animations.forEach(clip =>{
-		constactions = mixer.clipAction(clip)
+	animations.forEach(clip => {
+		const action = mixer.clipAction(clip)
 		actions.push(action);
 	});
 });
@@ -78,9 +76,10 @@ function init() {
 		if (mixer) {
 			mixer.update(clock.getDelta());
 		}
+		
+		renderer.render(scene, camera);
 	}
 
-	renderer.render(scene, camera);
 
 
 	function onResize() {
