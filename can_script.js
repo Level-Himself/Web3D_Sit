@@ -17,16 +17,24 @@ function init() {
 	camera.position.set(-5, 25, 20);
 
 
-	renderer = new THREE.WebGLRenderer();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	const canvas = document.getElementById('threeContainer');
+	renderer = new THREE.WebGLRenderer({ canvas: canvas });
+	renderer.setPixelRatio(window.devicePixelRatio);
+	resize();
+
 
 
 	document.body.appendChild(renderer.domElement);
 
 
-	const light = new THREE.DirectionalLight(0xFFFFFF, 1);
-	light.position.set(500, 500, 500);
-	scene.add(light);
+	//light attached to camera object. Code created with help from ChatGPT
+	const light = new THREE.PointLight(0xffffff, 40, 0);
+	light.position.set(0, 0, 0);
+	light.decay = 2;
+	light.distance = 100;
+	camera.add(light);
+	scene.add(camera);
+
 
 
 	// Add OrbitControls
@@ -83,7 +91,17 @@ function init() {
 
 
 	function onResize() {
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+	}
+
+	function resize() {
+		const canvas = document.getElementById('threeContainer');
+		const width = window.innerWidth;
+		const height = window.innerHeight;
+
+		camera.aspect = width / height;
+		camera.updateProjectionMatrix();
+		renderer.setSize(width, height);
 	}
