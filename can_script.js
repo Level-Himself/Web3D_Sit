@@ -73,7 +73,7 @@ function init() {
 	});
 });
 
-	window.addEventListener('resize', onResize, false);
+	window.addEventListener('resize', resize, false);
 
 	animate();
 	}
@@ -88,14 +88,7 @@ function init() {
 		renderer.render(scene, camera);
 	}
 
-
-
-	function onResize() {
-		camera.aspect = window.innerWidth / window.innerHeight;
-		camera.updateProjectionMatrix();
-		renderer.setSize(window.innerWidth, window.innerHeight);
-	}
-
+	
 	function resize() {
 		const canvas = document.getElementById('threeContainer');
 		const width = window.innerWidth;
