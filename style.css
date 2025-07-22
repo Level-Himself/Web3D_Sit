@@ -248,7 +248,7 @@ margin-top: 1%;
     max-height: 100%;
     display: block;
     margin: 10px auto 20px auto;
-    border: 5px solid gray;
+    border: 5px solid #760003;
 }
 
 .my-custom-h1 {
@@ -297,6 +297,16 @@ margin-top: 1%;
     #main_text {
         float: right;
         margin-top: 7%;
+    }
+
+    .custom-image {
+    border-radius: 5%;
+    margin-bottom: 10%;
+    width: 60%;
+    max-height: 100%;
+    display: block;
+    margin: 10px auto 20px auto;
+    border: 5px solid gray;
     }
 
     .card {
@@ -466,6 +476,18 @@ margin-top: 1%;
     
     body {
         background-color: rgb(185, 185, 178);
+    }
+
+    /*Difference sizing for images on large devices
+    */
+    .custom-image {
+    border-radius: 5%;
+    margin-bottom: 10%;
+    width: 40%;
+    max-height: 100%;
+    display: block;
+    margin: 10px auto 20px auto;
+    border: 5px solid gray;
     }
 
     #main_3d_image {
