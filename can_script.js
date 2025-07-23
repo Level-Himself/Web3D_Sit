@@ -1,4 +1,4 @@
-var scene, camera, renderer, clock, mixer, actions = [], mode, isWireframe = false;
+var scene, camera, renderer, clock, mixer, actions = [], mode, isWireframe = false, params, lights;
 let loadedModel;
 
 init();
@@ -35,6 +35,48 @@ function init() {
 	light.distance = 100;
 	camera.add(light);
 	scene.add(camera);
+
+	// Lighting UI
+	const ambient = new THREE.HemisphereLight(0xffffbb, 0x080820, 4);
+	scene.add(ambient);
+
+	lights = {};
+
+	lights.spot = new THREE.SpotLight();
+	lights.spot.visible = true;
+	lights.spot.position.set(0, 20, 0);
+	lights.spotHelper = new THREE.SpotLightHelper(lights.spot);
+	lights.spotHelper.visible = false;
+	scene.add(lights.spotHelper);
+	scene.add(lights.spot);
+
+	params = {
+		spot: {
+			enable: false,
+			color: 0xffffff,
+			distance: 20,
+			angle: Math.PI/2,
+			penumbra: 0,
+			helper: false,
+			moving: false
+		}
+	}
+
+	const gui = new dat.GUI({ autoPlace: false });
+	const guiContainer = document.getElementById('gui-container');
+	guiContainer.appendChild(gui.domElement);
+
+	guiContainer.style.position = 'fixed';
+
+	const spot = gui.addFolder('Light');
+	spot.open();
+	spot.add(params.spot, 'enable').onChange(value => {lights.spot.visible = value});
+	spot.addColor(params.spot, 'color').onChange(value => lights.spot.color = new THREE.Color(value));
+	spot.add(params.spot, 'distance').min(0).max(20).onChange(value => lights.spot.distance = value);
+	spot.add(params.spot, 'angle').min(0.1).max(6.28).onChange(value => lights.spot.angle = value);
+	spot.add(params.spot, 'penumbra').min(0).max(1).onChange(value => lights.spot.penumbra = value);
+	spot.add(params.spot, 'helper').onChange(value => lights.spotHelper.visible = value);
+	spot.add(params.spot, 'moving');
 
 
 
@@ -118,6 +160,14 @@ function init() {
 		}
 		
 		renderer.render(scene, camera);
+
+		
+		const time = clock.getElapsedTime();
+		const delta = Math.sin(time)*5;
+		if (params.spot.moving){
+			lights.spot.position.x = delta;
+			lights.spotHelper.update();
+		}
 	}
 
 	
