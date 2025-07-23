@@ -4,9 +4,20 @@ body{
 }
 
 #btn{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    background: #760003;
+    padding: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+#toggleWireframe{
+    background: #760003;
+    padding: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+#rotate{
     background: #760003;
     padding: 15px;
     font-family: Arial;
@@ -30,12 +41,23 @@ body{
 /*css for button styling for small devices and up*/
 @media (min-width: 576px) {
     #btn{
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
         background: grey;
         padding: 15px;
         font-family: Arial;
         color: white;
+    }
+
+    #toggleWireframe{
+    background: grey;
+    padding: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+    #rotate{
+    background: grey;
+    padding: 15px;
+    font-family: Arial;
+    color: white;
     }
 }

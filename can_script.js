@@ -1,4 +1,5 @@
-var scene, camera, renderer, clock, mixer, actions = [], mode;
+var scene, camera, renderer, clock, mixer, actions = [], mode, isWireframe = false;
+let loadedModel;
 
 init();
 
@@ -56,6 +57,25 @@ function init() {
 		}
 	  }
 	});
+
+	// Button to control wireframe
+	const wireframeBtn = document.getElementById("toggleWireframe");
+	wireframeBtn.addEventListener('click', function() {
+		isWireframe = !isWireframe;
+		toggleWireframe(isWireframe);
+	});
+
+	// Button to control rotation
+	const rotateBtn = document.getElementById('rotate');
+	rotateBtn.addEventListener('click', function () {
+		if (loadedModel) {
+			const axis = new THREE.Vector3(0, 1, 0);
+			const angle = Math.PI / 8;
+			loadedModel.rotateOnAxis(axis , angle);
+		} else {
+			console.warn('Model not loaded yet.');
+		}
+	});
   
 
 	//GLTF loader
@@ -64,6 +84,8 @@ function init() {
 	const model = gltf.scene;
 	scene.add(model);
 
+	loadedModel = model;
+
 	mixer = new THREE.AnimationMixer(model);
 	const animations = gltf.animations;
 	
@@ -71,12 +93,22 @@ function init() {
 		const action = mixer.clipAction(clip)
 		actions.push(action);
 	});
-});
+	});
 
 	window.addEventListener('resize', resize, false);
 
 	animate();
 	}
+
+	
+	function toggleWireframe(enable) {
+		scene.traverse(function (object) {
+			if (object.isMesh) {
+				object.material.wireframe = enable;
+			}
+		});
+	}
+
 
 	function animate(){
 		requestAnimationFrame(animate);
