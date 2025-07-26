@@ -81,13 +81,58 @@
     <img class="custom-image" src="assets/images/fanta_logo.png" alt="Fanta Logo">
 
 
-    <button id="btn">Open can</button>
+    <div id="gui-container"></div>
+    <div class="container-fluid main-contents">
+      <div class="row">
+          <div class="col-sm-10">
+        <div class="card" style="position: relative;">
+          <div class="card-header">
+            <h1>Lets drink!</h1>
+          </div>
+        </div>
+          <div class="card-body">
+          <div class="d-flex allign-items-center">
+        <canvas id="threeContainer"></canvas>
+          </div>
+          <button id="btn">
+            Open Can
+          </button>
+          <button id="toggleWireframe">
+            Toggle Wireframe
+          </button>
+          <button id="rotate">
+            Rotate
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    
+    <!--
+    <div id="threeContainer"></div>
+    -->
+
+    <script>
+      // Function to update the container size (Canvas)
+      function updateContainerSize() {
+        var container = document.getElementById('threeContainer');
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        container.width = width;
+        container.height = height;
+      }
+
+      window.addEventListener('load', updateContainerSize);
+      window.addEventListener('resize', updateContainerSize);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>    
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/GLTFLoader.js'></script>
-    <script  src="./.js"></script>
+    <script  src="./bottle_script.js"></script>
 
     <br>
 

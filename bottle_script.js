@@ -89,7 +89,7 @@ function init() {
 	mode = 'open';
 	const btn = document.getElementById("btn");
 	btn.addEventListener('click', function() {
-	  if (actions.length === 2) {
+	  if (actions.length >= 1) {
 		if (mode === "open") {
 		  actions.forEach(action => {
 			action.timeScale = 1;
@@ -122,7 +122,7 @@ function init() {
 
 	//GLTF loader
 	const loader = new THREE.GLTFLoader();
-	loader.load(assetPath + 'can.glb', function(gltf) {
+	loader.load(assetPath + 'bottle.glb', function(gltf) {
 	const model = gltf.scene;
 	scene.add(model);
 
