@@ -251,7 +251,7 @@ margin-top: 1%;
     border: 5px solid #760003;
 }
 
-.my-custom-h1 {
+.my-custom-h1-pepsi {
     font-family: 'Oswald', sans-serif;
     font-size: 46px;
     margin: auto;
@@ -260,6 +260,34 @@ margin-top: 1%;
     text-align: center;
     text-decoration: underline;
     color: black;
+    -webkit-text-stroke-width: 1px; /*code help from mdn web doc*/
+    -webkit-text-stroke-color: #1C52A2; /*https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke-color*/
+}
+
+.my-custom-h1-sprite {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    margin: auto;
+    width:50%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #02A04C;
+}
+
+.my-custom-h1-fanta {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    margin: auto;
+    width:50%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff5f17;
 }
 
 .navbar-text > a {
