@@ -290,6 +290,25 @@ margin-top: 1%;
     -webkit-text-stroke-color: #ff5f17;
 }
 
+.card-title-pepsi {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1C52A2; /*Pepsi blue hex code*/
+}
+
+.card-title-sprite {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #02A04C; /*Sprite green hex code*/
+}
+
+.card-title-fanta {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff5f17; /*Fanta orange hex code*/
+}
+
+
 .navbar-text > a {
     color: rgb(255, 255, 255);
     font-size: 8px;
