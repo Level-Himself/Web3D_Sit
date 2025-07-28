@@ -292,19 +292,19 @@ margin-top: 1%;
 
 .card-title-pepsi {
     color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #1C52A2; /*Pepsi blue hex code*/
 }
 
 .card-title-sprite {
     color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #02A04C; /*Sprite green hex code*/
 }
 
 .card-title-fanta {
     color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #ff5f17; /*Fanta orange hex code*/
 }
 
