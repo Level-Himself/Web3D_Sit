@@ -29,12 +29,12 @@ function init() {
 
 
 	//light attached to camera object. Code created with help from ChatGPT
-	const light = new THREE.PointLight(0xffffff, 40, 0);
+	/*const light = new THREE.PointLight(0xffffff, 40, 0);
 	light.position.set(0, 0, 0);
 	light.decay = 2;
 	light.distance = 100;
 	camera.add(light);
-	scene.add(camera);
+	scene.add(camera);*/
 
 	// Lighting UI
 	const ambient = new THREE.HemisphereLight(0xffffbb, 0x080820, 4);

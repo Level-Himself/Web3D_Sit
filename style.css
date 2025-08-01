@@ -30,6 +30,7 @@ body {
 
 p {
 	font-family: 'Open Sans', sans-serif;
+    margin: 1%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -290,6 +291,15 @@ margin-top: 1%;
     -webkit-text-stroke-color: #ff5f17;
 }
 
+.custom-h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: gray;
+    margin: 1%;
+    -webkit-text-stroke-width: 1px; /*code help from mdn web doc*/
+    -webkit-text-stroke-color: #760003; /*https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke-color*/
+}
+
 .card-title-pepsi {
     color: black;
     -webkit-text-stroke-width: .5px;
@@ -354,6 +364,15 @@ margin-top: 1%;
     display: block;
     margin: 10px auto 20px auto;
     border: 5px solid gray;
+    }
+
+    .custom-h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: gray;
+    margin: 1%;
+    -webkit-text-stroke-width: 1px; /*code help from mdn web doc*/
+    -webkit-text-stroke-color: black; /*https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke-color*/
     }
 
     .card {
