@@ -30,7 +30,7 @@
      
             <div class="logo">
                     <a class="navbar-brand" href="home.html">
-                        <h1>1oca</h1>
+                        <h1>The</h1>
                         <h2>Cola</h2>
                         <h3>Journey</h3>
                         <p>Refreshing the world, one story at a time</p>
@@ -64,7 +64,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                        <a class="nav-link" href="https://www.youtube.com/playlist?list=PLsmBDBSKDaMezRmEsKEa9q7O0zmD9Jt6L" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="YouTube content">Video Content</a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +98,7 @@
     <br><br>JS code was used to add each 3D model to their respective webpages via their file path within my GitHub repository.
     <br><br>Images and text were added in the webpages’ HTML and styled using my two CSS documents, outlining the colours and boarders etc. of text and images.
     <br><br>Model animations were rendered from Blender and uploaded to YouTube. The unlisted YouTube videos were embedded to the webpages in their HTML. 
-    <br><br>*audio*
+    <br><br>Audio was added to each 3D model and model webpage using Adobe Audition and royalty free audio from Pixabay (https://pixabay.com/sound-effects/). Audio was trimmed to fit the models’ animations, and event listeners were added to each webpage’s JS code to trigger audio when the animation button was clicked.
     <br><br>I wanted to explore using simulations and so my glass and bottle models use physically based simulations for their animations. The glass model is split into several hundred fractures by parenting a Voronoi fracture object to it. Then, using rigid body simulation tags and an invisible 2D ground plane, the fractured object breaks apart under the weight of gravity and splays out across the ground. Similarly, the bottle model uses rigid body tags and an invisible cube acting as a trigger, simulating the bottle cap being flicked off the top of the bottle. Opposingly, the can object uses traditional keyframe animation techniques to show the can ring pull piercing open the top of the can. 
     <br><br>To convert the simulations into animations (a necessary step for the animations to play in THREE.js), I used Blender. In C4D the simulations were ‘baked as alembic,’ and the alembic files (.abc) were then imported into Blender, which includes both the model’s geometry and simulation data. With all points selected in object mode, Object > Animation > Bake Action bakes the simulation data into a keyframed animation. When exported from Blender as a .glb file, with animations included, the models’ animations are also exported in a THREE.js compatible format (see image below).</p>
     <img class="custom-image" src="assets/about_page_images/glb_animations_example.PNG" alt="test image">
@@ -118,6 +118,12 @@
     <br>
     <div class="custom-h1">Implementation and publication</div>
     <p>I have added an about page, highlighting the work done to produce the website. I have... *continue, mentioning GitHub desktop*</p>
+    
+    <br>
+    <div class="custom-h1">Statement of Originality & References</div>
+    <p>This website is a product of my own work. Where highlighted in code (via comments), external reasorces were used to aid development:
+    <br><br>Pixabay. Avaliable at: https://pixabay.com/sound-effects/ (Accessed: 3 August 2025).
+    <br><br>ChatGPT. Avaliable at: https://chatgpt.com/ (Accessed June, July, August 2025).</p>
     <br>
 
     <nav class="navbar navbar-expand-sm custom-footer navbar-dark">
