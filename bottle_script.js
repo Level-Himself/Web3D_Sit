@@ -28,6 +28,20 @@ function init() {
 	document.body.appendChild(renderer.domElement);
 
 
+	const listener = new THREE.AudioListener();
+	camera.add(listener);
+
+	sound = new THREE.Audio(listener);
+	secondSound = new THREE.Audio(listener);
+
+	const audioLoader = new THREE.AudioLoader();
+	audioLoader.load('assets/sfx/bottle_lid_trim.mp3', function (buffer) {
+		sound.setBuffer(buffer);
+		sound.setLoop(false);
+		sound.setVolume(1.0);
+	});
+
+
 	//light attached to camera object. Code created with help from ChatGPT
 	/*const light = new THREE.PointLight(0xffffff, 40, 0);
 	light.position.set(0, 0, 0);
@@ -95,6 +109,9 @@ function init() {
 			action.timeScale = 1;
 			action.reset();
 			action.play();
+
+			if (sound.isPlaying) sound.stop();
+			sound.play();
 		  });
 		}
 	  }

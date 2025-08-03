@@ -1,5 +1,6 @@
 var scene, camera, renderer, clock, mixer, actions = [], mode, isWireframe = false, params, lights;
 let loadedModel;
+let sound, secondSound;
 
 init();
 
@@ -26,6 +27,19 @@ function init() {
 
 
 	document.body.appendChild(renderer.domElement);
+
+	const listener = new THREE.AudioListener();
+	camera.add(listener);
+
+	sound = new THREE.Audio(listener);
+	secondSound = new THREE.Audio(listener);
+
+	const audioLoader = new THREE.AudioLoader();
+	audioLoader.load('assets/sfx/can_opening_trim.mp3', function (buffer) {
+		sound.setBuffer(buffer);
+		sound.setLoop(false);
+		sound.setVolume(1.0);
+	});
 
 
 	//light attached to camera object. Code created with help from ChatGPT
@@ -95,6 +109,9 @@ function init() {
 			action.timeScale = 1;
 			action.reset();
 			action.play();
+
+			if (sound.isPlaying) sound.stop();
+			sound.play();
 		  });
 		}
 	  }
@@ -142,7 +159,7 @@ function init() {
 	animate();
 	}
 
-	
+
 	function toggleWireframe(enable) {
 		scene.traverse(function (object) {
 			if (object.isMesh) {
