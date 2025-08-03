@@ -1,0 +1,85 @@
+<batchrender>
+  <environmentinfo>
+    <machineinfo>
+      <machinename>DESKTOP-C2PRGAT</machinename>
+      <username>ellio</username>
+      <processortype>AuthenticAMD, stepping 2, model 1, instruction family 15</processortype>
+      <processorname>AMD Ryzen 9 5900X 12-Core Processor</processorname>
+      <processornumber>24</processornumber>
+      <ostype>WINDOWS 64 BIT</ostype>
+      <osversion>Windows 10, 64 Bit, Core (build 19045)</osversion>
+      <oglvendorname>AMD</oglvendorname>
+      <oglrendername>AMD Radeon RX 6600 XT</oglrendername>
+      <oglversion>12</oglversion>
+    </machineinfo>
+    <c4dinfo>
+      <c4dversion>2025.3.1</c4dversion>
+      <c4dplugins>redshiftconfig advanced_render analytics archigrass bugslife_client c4d_assetbrowser c4d_bitmapfilter c4d_manager c4d_nodeeditor c4d_nodes c4d_objects c4d_simulation c4d_viewport_render c4d_xtensions ca clothilde dynamics hair interop_bpexchange interop_forger interop_misc interop_moves io_alembic io_cadexchange io_collada14 io_collada15 io_compositing io_dwg io_fbx io_forger io_gltf io_goz io_obj io_skp io_substance io_usd laubwerk mocca mograph motioncam motiontracker python redshift redshift4c4d sculpt shader sketch sky sla teamrender thinking_particles tool_system_hybrid uvviewport volumes xpressocore </c4dplugins>
+    </c4dinfo>
+  </environmentinfo>
+  <fileinfo>
+    <filename>glass_break_animation.c4d</filename>
+    <filepath>C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass</filepath>
+    <renderdatainfo>
+      <rendersettings>My Render Setting</rendersettings>
+      <take>Main</take>
+      <camera>Default Camera</camera>
+      <width>1920</width>
+      <height>1080</height>
+      <filmaspect>1.778</filmaspect>
+      <pixelaspect>1</pixelaspect>
+      <fps>30</fps>
+      <from>0</from>
+      <to>90</to>
+      <steps>1</steps>
+      <saveinfo>
+        <imagepath>C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass</imagepath>
+        <imagedepth>16</imagedepth>
+        <imageformat>PNG</imageformat>
+      </saveinfo>
+      <videopost>
+        <effect id="1036219" name="Redshift" />
+      </videopost>
+    </renderdatainfo>
+  </fileinfo>
+  <renderinfo>
+    <imageinfo frame="0">00:00:01 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0000.png</imageinfo>
+    <imageinfo frame="1">00:00:01 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0001.png</imageinfo>
+    <imageinfo frame="2">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0002.png</imageinfo>
+    <imageinfo frame="3">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0003.png</imageinfo>
+    <imageinfo frame="4">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0004.png</imageinfo>
+    <imageinfo frame="5">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0005.png</imageinfo>
+    <imageinfo frame="6">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0006.png</imageinfo>
+    <imageinfo frame="7">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0007.png</imageinfo>
+    <imageinfo frame="8">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0008.png</imageinfo>
+    <imageinfo frame="9">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0009.png</imageinfo>
+    <imageinfo frame="10">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0010.png</imageinfo>
+    <imageinfo frame="11">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0011.png</imageinfo>
+    <imageinfo frame="12">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0012.png</imageinfo>
+    <imageinfo frame="13">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0013.png</imageinfo>
+    <imageinfo frame="14">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0014.png</imageinfo>
+    <imageinfo frame="15">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0015.png</imageinfo>
+    <imageinfo frame="16">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0016.png</imageinfo>
+    <imageinfo frame="17">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0017.png</imageinfo>
+    <imageinfo frame="18">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0018.png</imageinfo>
+    <imageinfo frame="19">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0019.png</imageinfo>
+    <imageinfo frame="20">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0020.png</imageinfo>
+    <imageinfo frame="21">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0021.png</imageinfo>
+    <imageinfo frame="22">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0022.png</imageinfo>
+    <imageinfo frame="23">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0023.png</imageinfo>
+    <imageinfo frame="24">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0024.png</imageinfo>
+    <imageinfo frame="25">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0025.png</imageinfo>
+    <imageinfo frame="26">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0026.png</imageinfo>
+    <imageinfo frame="27">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0027.png</imageinfo>
+    <imageinfo frame="28">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0028.png</imageinfo>
+    <imageinfo frame="29">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0029.png</imageinfo>
+    <imageinfo frame="30">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0030.png</imageinfo>
+    <imageinfo frame="31">00:00:00 C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass\glass_break_animation_Viewport_a0031.png</imageinfo>
+  </renderinfo>
+  <batchinfo>
+    <added>18/07/2025, 13:33:30</added>
+    <started>18/07/2025, 13:33:59</started>
+    <rendertime>00:00:22</rendertime>
+    <result>Finished</result>
+  </batchinfo>
+</batchrender>

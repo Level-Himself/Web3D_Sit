@@ -1,0 +1,56 @@
+<batchrender>
+  <environmentinfo>
+    <machineinfo>
+      <machinename>DESKTOP-C2PRGAT</machinename>
+      <username>ellio</username>
+      <processortype>AuthenticAMD, stepping 2, model 1, instruction family 15</processortype>
+      <processorname>AMD Ryzen 9 5900X 12-Core Processor</processorname>
+      <processornumber>24</processornumber>
+      <ostype>WINDOWS 64 BIT</ostype>
+      <osversion>Windows 10, 64 Bit, Core (build 19045)</osversion>
+      <oglvendorname>AMD</oglvendorname>
+      <oglrendername>AMD Radeon RX 6600 XT</oglrendername>
+      <oglversion>12</oglversion>
+    </machineinfo>
+    <c4dinfo>
+      <c4dversion>2025.3.1</c4dversion>
+      <c4dplugins>redshiftconfig advanced_render analytics archigrass bugslife_client c4d_assetbrowser c4d_bitmapfilter c4d_manager c4d_nodeeditor c4d_nodes c4d_objects c4d_simulation c4d_viewport_render c4d_xtensions ca clothilde dynamics hair interop_bpexchange interop_forger interop_misc interop_moves io_alembic io_cadexchange io_collada14 io_collada15 io_compositing io_dwg io_fbx io_forger io_gltf io_goz io_obj io_skp io_substance io_usd laubwerk mocca mograph motioncam motiontracker python redshift redshift4c4d sculpt shader sketch sky sla teamrender thinking_particles tool_system_hybrid uvviewport volumes xpressocore </c4dplugins>
+    </c4dinfo>
+  </environmentinfo>
+  <fileinfo>
+    <filename>glass_break_animation.c4d</filename>
+    <filepath>C:\Users\ellio\OneDrive - University of Sussex\Year 3\Web3D_sit\models\glass</filepath>
+    <renderdatainfo>
+      <rendersettings>My Render Setting</rendersettings>
+      <take>Main</take>
+      <camera>Default Camera</camera>
+      <width>1920</width>
+      <height>1080</height>
+      <filmaspect>1.778</filmaspect>
+      <pixelaspect>1</pixelaspect>
+      <fps>30</fps>
+      <from>0</from>
+      <to>9</to>
+      <steps>1</steps>
+      <saveinfo>
+        <imagepath>C:\Users\ellio\Downloads</imagepath>
+        <imagedepth>8</imagedepth>
+        <imageformat>MP4</imageformat>
+      </saveinfo>
+      <renderengine>
+        <engine id="1036219" name="Redshift" />
+      </renderengine>
+      <videopost>
+        <effect id="1036219" name="Redshift" />
+      </videopost>
+    </renderdatainfo>
+  </fileinfo>
+  <renderinfo>
+  </renderinfo>
+  <batchinfo>
+    <added>18/07/2025, 13:34:31</added>
+    <started>18/07/2025, 13:34:33</started>
+    <rendertime>00:01:41</rendertime>
+    <result>Error - Out Of Memory</result>
+  </batchinfo>
+</batchrender>
