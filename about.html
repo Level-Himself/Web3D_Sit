@@ -79,11 +79,12 @@
     <br>
     <div class="custom-h1">3D Models</div>
     <p>I created three 3D models for my website for the brands Pepsi, Sprite, and Fanta. I created a glass, can, and bottle for the three brands, each with unique and appropriate animations.
-    <br><br>All three models were created using Cinema 4D and Blender, using a combination of modelling methods in C4D, including editable generic objects and the spline pen tool. More complex geometry, such as the repeating pattern on the outside of the Pepsi glass (see image below), required the use of tools such as cloner objects which, when parented to another object, can duplicated it in varying patterns as many times as the artist would like. After the models’ geometry was completed, I imported the models into Blender for texturing and animation finalisations. This is because Cinema 4D materials are poorly supported by THREE.js.</p>
+    <br><br>All three models were created using Cinema 4D and Blender, using a combination of modelling methods in C4D, including editable generic objects and the spline pen tool. More complex geometry, such as the repeating pattern on the outside of the Pepsi glass (see image below), required the use of tools such as cloner objects which, when parented to another object, can duplicate it in varying patterns as many times as the artist would like. After the models’ geometry was completed, I imported the models into Blender for texturing and animation finalisations. This is because Cinema 4D materials are poorly supported by THREE.js.</p>
     <img class="custom-image" src="assets/about_page_images/glass_model_capture.png" alt="test image">
-    <p>Model lighting and virtual cameras were handled in THREE.js. Each model’s webpage’s HTML linked to a unique JS file which contained code initialising a THREE.js scene, camera object, and lights. Due to the chromatic nature of some of my models’ materials (created in Blender as custom materials), ambient light sources would not work to light the models. To combat this, with guidance from online resources and ChatGPT, I incorporated JS code that parented the directional light to the camera, resulting in the models always being uniformly lit no matter the viewing angle of the virtual camera. Extra, user customisable lighting can was added to the JS code (see images below).</p>
+    <p>Model lighting and virtual cameras were handled in THREE.js. Each model’s webpage’s HTML linked to a unique JS file which contained code initialising a THREE.js scene, camera object, and lights. Due to the chromatic nature of some of my models’ materials (created in Blender as custom materials), ambient light sources would not work to light the models. To combat this, with guidance from online resources and ChatGPT, I incorporated JS code that parented the directional light to the camera, resulting in the models always being uniformly lit no matter the viewing angle of the virtual camera. Extra, user customisable lighting was added to the JS code (see images below).</p>
     <img class="custom-image" src="assets/about_page_images/lighting_capture.PNG" alt="test image">
     <img class="custom-image" src="assets/about_page_images/lighting_UI_capture.PNG" alt="test image">
+    <p>When embedding glass and bottle 3D models into their respective webpages I encountered a highly complex problem with transparent textures not loading. These textures did load correctly in GLTF Viewer and THREE.js editor. Videos embedded at the bottom of each 3D model’s webpage shows renders of the models with correct textures applied.</p>
 
     <br>
     <div class="custom-h1">Design</div>
@@ -105,7 +106,7 @@
 
     <br>
     <div class="custom-h1">Interaction</div>
-    <p>JavaScript funds interactivity across the 3D models’ webpages. THREE.js scenes were hosted through JS code allowing the 3D models to be viewed in 3D space, and the virtual camera can be rotated, moved, and zoomed in and out. Through JS code and button elements, users can interact with the 3D models in other, more complex ways. One button switches the view model to the object's wireframe, showcasing the polygons on the model; the rotate button allows the user the incrementally rotate the model around the y axis, viewing it from 360 degrees of angles. 
+    <p>JavaScript funds interactivity across the 3D models’ webpages. THREE.js scenes were hosted through JS code allowing the 3D models to be viewed in 3D space, and the virtual camera can be rotated, moved, and zoomed in and out. Through JS code and button elements, users can interact with the 3D models in other, more complex ways. One button switches the view model to the object's wireframe, showcasing the polygons on the model; the rotate button allows the user to incrementally rotate the model around the y axis, viewing it from 360 degrees of angles. 
     <br><br>Examples of interactivity in other webpages (outside of the webpages produced in the labs) includes image buttons in the webpages’ footer, with the YouTube icon linking to my YouTube portfolio channel which was used to host animation videos embedded in the models’ webpages. Also, lighting UI was added in JS code, allowing the user to customise the lighting on the model, including the colour and movement of the directional light source.</p>
 
     <br>
@@ -117,7 +118,7 @@
 
     <br>
     <div class="custom-h1">Implementation and publication</div>
-    <p>I have added an about page, highlighting the work done to produce the website. I have... *continue, mentioning GitHub desktop*</p>
+    <p>I have added an about page, highlighting the work done to produce the website. I have synchronised my work across multiple devices using a GitHub repository and GitHub Desktop to host my work. I have uploaded my GitHub repository link to Canvas, as well as a zipped folder containing my work (as redundancy).</p>
     
     <br>
     <div class="custom-h1">Statement of Originality & References</div>
